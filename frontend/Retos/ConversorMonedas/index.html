@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <header>
+        <img src="./Sin nombre.png" alt="">
+    </header>
+    <article>
+        <h2>Conversor de monedas internacional</h2>
+        <section>
+            <h1>Convertir monedas</h1>
+            <form action="#">
+                <p id="error"></p>
+                <div id="origen">
+                    <div class="formitem">
+                        <label for="">Moneda que desea convertir</label>
+                        <select name="monedaOrigen" id="monedaOrigen">
+                            <option value="1">Euro</option>
+                            <option value="2">Libra</option>
+                            <option value="3">Dolar</option>
+                        </select>
+                    </div>
+                    <div class="formitem">
+                        <input type="number" id="inputOrigen">
+                    </div>
+                </div>
+                <div id="conversion">
+                    <div class="formitem">
+                        <label for="">Moneda a la que desea convertir</label>
+                        <select name="monedaConversion" id="monedaConversion">
+                            <option value="1">Euro</option>
+                            <option value="2">Libra</option>
+                            <option value="3">Dolar</option>
+                        </select>
+                    </div>
+                    <div class="formitem">
+                        <input type="number" id="inputConversion" maxlength="2" readonly>
+                    </div>
+                </div>
+                <div class="formitem">
+                    <button id="boton">Convertir</button>
+                </div>
+            </form>
+        </section>
+    </article>
+    <script src="./js.js"></script>
+</body>
+</html>

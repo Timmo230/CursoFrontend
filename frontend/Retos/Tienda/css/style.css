@@ -1,0 +1,154 @@
+body{
+    background-color: #F0F1F5;
+    font-family: "Libertinus Mono", serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    align-items: center;
+    margin: 0 40%;
+    width: 300px;
+}
+header h1{
+    font-size: 50px;
+}
+main{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+section{
+    background-color: white;
+    border-radius: 15px;
+    width: 46%;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+p{
+    font-size: 15px;
+    font-weight: 100;
+}
+div{
+    margin: 0;
+}
+button{
+    background-color: #273A8B;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #273A8B;
+}
+
+
+/*clases*/
+.producto{
+    container-type: inline-size;
+    width: 95%;
+    height: 208px;
+    background-color: #E6F1FF;
+    border-radius: 15px;
+    border: 2px solid #BFDBFD;
+    margin: 10px;
+}
+.producto *{
+    margin: 20px;
+}
+.producto div{
+    align-items: center;
+    grid-gap: 100px;
+}
+.producto div *{
+    margin: 0;
+}
+.producto img{
+    width: 0;
+    margin: 0px;
+}
+.productoencesta{
+    width: 95%;
+    height: 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.titulo{
+    display: grid;
+    align-items: center;
+}
+.producto div{
+    display: grid;
+    grid-template-columns: 40px 30px;
+    grid-gap: 0px;
+    padding: 0;
+}
+
+/*Ids*/
+#tituloCesta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#pago{
+    display: grid;
+    background-color: #181F32;
+    border-radius: 15px;
+    color: white;
+    justify-content: center;
+    margin: 10px;
+}
+#pago div{
+    display: flex;
+    align-content: space-between;
+    gap: 50PX;
+    padding: 15px 15px;
+}
+#pago div h2{
+    margin: 10px;
+}
+#listaProductos{
+    width: 90%;
+    min-height: 500px;
+    background-color: #F8FAFC;
+    margin: 20px auto;
+    border: 1px dashed #CCD5E0;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+#vacio{
+    padding: 140px 0;
+}
+#listaProductos div h2{
+    font-size: 20px;
+}
+
+
+@container (min-width: 420px){
+    .producto img{
+        height: 180px;
+        width: 200px;
+        float: right;
+        margin: 0px;
+        margin-right: 15%;
+        margin-top: 10px;
+    }
+}

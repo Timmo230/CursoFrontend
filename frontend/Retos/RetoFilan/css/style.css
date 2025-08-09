@@ -1,0 +1,137 @@
+/*Estilos generales*/
+body {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(90deg, #e23636, #f78f3f);
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    width: 180px;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+
+main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Formulario */
+form {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.itemform {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.itemform label {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.itemform input, .itemform select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.itemform input[type="submit"] {
+    background-color: #e23636;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.itemform input[type="submit"]:hover {
+    background-color: #b52b2b;
+}
+
+.itemform input[type="submit"]:active {
+    background-color: #8e2222;
+}
+
+#arroba {
+    width: 50px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+}
+
+#nick{
+    width: 486px;
+    border-radius: 0 5px 5px 0;
+}
+
+#nickContainer {
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+/*Drag and drop*/
+#draganddrop {
+    display: flex;
+    gap: 2rem;
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 31.25rem;
+}
+
+#draganddrop > div:first-child {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#draganddrop img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#draganddrop img:hover {
+    transform: scale(1.05);
+    border-color: #ff0000;
+}
+
+/*Footer*/
+footer {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    text-align: center;
+    color: #aaa;
+}

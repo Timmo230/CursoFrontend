@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Adivinar Cartas</title>
+  <link rel="stylesheet" href="./../css/juego.css">
+</head>
+<body>
+  <header>
+    <h1>Juego: Adivina la Carta</h1>
+  </header>
+
+  <div class="container">
+    <div id="gameAreaContainer"><div class="game-area" id="gameArea"></div></div>
+
+    <aside class="sidebar">
+      <div class="player-card">
+        <div class="avatar">
+          <img src="" alt="avatar" id="avatar">
+        </div>
+        <div class="player-info">
+          <div class="nick" id="nick"></div>
+          <div id="dificultad"></div>
+        </div>
+      </div>
+
+
+      <div class="stats">
+        <div class="stat">
+          <div class="label">Tiempo restante</div>
+          <div class="value" id="time">02:30</div>
+        </div>
+        <div class="stat">
+          <div class="label">Puntaje</div>
+          <div class="value" id="score">1200</div>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="btn" id="btn-restart">Reiniciar</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="./../js/juego.js"></script>
+</body>
+</html>

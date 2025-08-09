@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./../img/Logo.png" alt="Logo empresa" width="70px">
+        <h1>TechFix</h1>
+    </header>
+
+    <main>
+        <section id="productos">
+            <div class="producto" draggable="true">
+                <img src="./../img/Procesador.png" alt="">
+                <h2>Procesador</h2>
+                <h3>Intel core i7-13700k</h3>
+                <p>Procesador de alto rendimiento</p>
+                <div>
+                    <p class="price">399</p>
+                    <p>€</p>
+                </div>
+            </div>
+            <div class="producto" draggable="true">
+                <img src="./../img/TarjetaGrafica.png" alt="">
+                <h2>Grafica</h2>
+                <h3>NVIDIA RTX 4070</h3>
+                <p>Tarjeta grafica gaming</p>
+                <div>
+                    <p class="price">649</p>
+                    <p>€</p>
+                </div>
+            </div>
+            <div class="producto" draggable="true">
+                <img src="./../img/RAM.png" alt="">
+                <h2>RAM</h2>
+                <h3>Corsair Ventageance 32GB DDR5</h3>
+                <p>Memoria RAM de alta velocidad</p>
+                <div>
+                    <p class="price">189</p>
+                    <p>€</p>
+                </div>
+            </div>
+            <div class="producto" draggable="true">
+                <img src="./../img/DiscoDuro.png" alt="">
+                <h2>Disco Duro</h2>
+                <h3>Sansung 980 PRO 1TB NVMe</h3>
+                <p>SSD de alta velocidad</p>
+                <div>
+                    <p class="price">129</p>
+                    <p>€</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cesta">
+            <div id="tituloCesta">
+                <img src="./../img/Cesta.png" alt="Icono cesta" width="50px">
+                <h2>Cesta de la compra</h2>
+            </div>
+            <div id="listaProductos">
+                
+            </div>
+            <div id="pago">
+                <div>
+                    <h2>TOTAL: </h2>
+                    <h2 id="precioTotal">0€</h2>
+                </div>
+                <button id="boton">Proceder al pago</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./../js/app.js"></script>
+</body>
+</html>
